@@ -86,186 +86,168 @@ class _VerifyOtpState extends State<VerifyOtp> {
               mainAxisSize: MainAxisSize.max,
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                Padding(
-                  padding: const EdgeInsets.only(left: 0),
-                  child: Container(
-                    height: 48,
-                    width: 48,
-                    color: Colors.lightBlue[100],
-                    child: TextField(
-                      controller: n[0],
-                      onChanged: (val){
-                        setState(() {
-                          user_otp = user_otp + val;
-                        });
-                        if(val.length == 1)
-                          {
-                            FocusScope.of(context).nextFocus();
-                          }
-                      },
-                      decoration: InputDecoration(
+                Container(
+                  height: 48,
+                  width: 48,
+                  color: Colors.lightBlue[100],
+                  child: TextField(
+                    controller: n[0],
+                    onChanged: (val){
+                      setState(() {
+                        user_otp = user_otp + val;
+                      });
+                      if(val.length == 1)
+                        {
+                          FocusScope.of(context).nextFocus();
+                        }
+                    },
+                    decoration: InputDecoration(
+                      labelStyle: TextStyle(
+                        fontSize: 10,
+                        fontWeight: FontWeight.w600
+                      ),
+                      border: InputBorder.none
+                    ),
+                    keyboardType: TextInputType.number,
+                    inputFormatters: [LengthLimitingTextInputFormatter(1),
+                    FilteringTextInputFormatter.digitsOnly],
+                    textAlign: TextAlign.center,
+                  ),
+                ),
+                Container(
+                  height: 48,
+                  width: 48,
+                  color: Colors.lightBlue[100],
+                  child: TextField(
+                    controller: n[1],
+                    onChanged: (val){
+                      setState(() {
+                        user_otp = user_otp + val;
+                      });
+                      if(val.length == 1)
+                      {
+                        FocusScope.of(context).nextFocus();
+                      }
+                    },
+                    decoration: InputDecoration(
                         labelStyle: TextStyle(
-                          fontSize: 10,
-                          fontWeight: FontWeight.w600
+                            fontSize: 10,
+                            fontWeight: FontWeight.w600
                         ),
                         border: InputBorder.none
-                      ),
-                      keyboardType: TextInputType.number,
-                      inputFormatters: [LengthLimitingTextInputFormatter(1),
+                    ),
+                    keyboardType: TextInputType.number,
+                    inputFormatters: [LengthLimitingTextInputFormatter(1),
                       FilteringTextInputFormatter.digitsOnly],
-                      textAlign: TextAlign.center,
-                    ),
+                    textAlign: TextAlign.center,
                   ),
                 ),
-                Padding(
-                  padding: const EdgeInsets.only(left: 0),
-                  child: Container(
-                    height: 48,
-                    width: 48,
-                    color: Colors.lightBlue[100],
-                    child: TextField(
-                      controller: n[1],
-                      onChanged: (val){
-                        setState(() {
-                          user_otp = user_otp + val;
-                        });
-                        if(val.length == 1)
-                        {
-                          FocusScope.of(context).nextFocus();
-                        }
-                      },
-                      decoration: InputDecoration(
-                          labelStyle: TextStyle(
-                              fontSize: 10,
-                              fontWeight: FontWeight.w600
-                          ),
-                          border: InputBorder.none
-                      ),
-                      keyboardType: TextInputType.number,
-                      inputFormatters: [LengthLimitingTextInputFormatter(1),
-                        FilteringTextInputFormatter.digitsOnly],
-                      textAlign: TextAlign.center,
+                Container(
+                  height: 48,
+                  width: 48,
+                  color: Colors.lightBlue[100],
+                  child: TextField(
+                    controller: n[2],
+                    onChanged: (val){
+                      setState(() {
+                        user_otp = user_otp + val;
+                      });
+                      if(val.length == 1)
+                      {
+                        FocusScope.of(context).nextFocus();
+                      }
+                    },
+                    decoration: InputDecoration(
+                        labelStyle: TextStyle(
+                            fontSize: 10,
+                            fontWeight: FontWeight.w600
+                        ),
+                        border: InputBorder.none
                     ),
+                    keyboardType: TextInputType.number,
+                    inputFormatters: [LengthLimitingTextInputFormatter(1),
+                      FilteringTextInputFormatter.digitsOnly],
+                    textAlign: TextAlign.center,
                   ),
                 ),
-                Padding(
-                  padding: const EdgeInsets.only(left: 0),
-                  child: Container(
-                    height: 48,
-                    width: 48,
-                    color: Colors.lightBlue[100],
-                    child: TextField(
-                      controller: n[2],
-                      onChanged: (val){
-                        setState(() {
-                          user_otp = user_otp + val;
-                        });
-                        if(val.length == 1)
-                        {
-                          FocusScope.of(context).nextFocus();
-                        }
-                      },
-                      decoration: InputDecoration(
-                          labelStyle: TextStyle(
-                              fontSize: 10,
-                              fontWeight: FontWeight.w600
-                          ),
-                          border: InputBorder.none
-                      ),
-                      keyboardType: TextInputType.number,
-                      inputFormatters: [LengthLimitingTextInputFormatter(1),
-                        FilteringTextInputFormatter.digitsOnly],
-                      textAlign: TextAlign.center,
+                Container(
+                  height: 48,
+                  width: 48,
+                  color: Colors.lightBlue[100],
+                  child: TextField(
+                    controller: n[3],
+                    onChanged: (val){
+                      setState(() {
+                        user_otp = user_otp + val;
+                      });
+                      if(val.length == 1)
+                      {
+                        FocusScope.of(context).nextFocus();
+                      }
+                    },
+                    decoration: InputDecoration(
+                        labelStyle: TextStyle(
+                            fontSize: 10,
+                            fontWeight: FontWeight.w600
+                        ),
+                        border: InputBorder.none
                     ),
+                    keyboardType: TextInputType.number,
+                    inputFormatters: [LengthLimitingTextInputFormatter(1),
+                      FilteringTextInputFormatter.digitsOnly],
+                    textAlign: TextAlign.center,
                   ),
                 ),
-                Padding(
-                  padding: const EdgeInsets.only(left: 0),
-                  child: Container(
-                    height: 48,
-                    width: 48,
-                    color: Colors.lightBlue[100],
-                    child: TextField(
-                      controller: n[3],
-                      onChanged: (val){
-                        setState(() {
-                          user_otp = user_otp + val;
-                        });
-                        if(val.length == 1)
-                        {
-                          FocusScope.of(context).nextFocus();
-                        }
-                      },
-                      decoration: InputDecoration(
-                          labelStyle: TextStyle(
-                              fontSize: 10,
-                              fontWeight: FontWeight.w600
-                          ),
-                          border: InputBorder.none
-                      ),
-                      keyboardType: TextInputType.number,
-                      inputFormatters: [LengthLimitingTextInputFormatter(1),
-                        FilteringTextInputFormatter.digitsOnly],
-                      textAlign: TextAlign.center,
+                Container(
+                  height: 48,
+                  width: 48,
+                  color: Colors.lightBlue[100],
+                  child: TextField(
+                    controller: n[4],
+                    onChanged: (val){
+                      setState(() {
+                        user_otp = user_otp + val;
+                      });
+                      if(val.length == 1)
+                      {
+                        FocusScope.of(context).nextFocus();
+                      }
+                    },
+                    decoration: InputDecoration(
+                        labelStyle: TextStyle(
+                            fontSize: 10,
+                            fontWeight: FontWeight.w600
+                        ),
+                        border: InputBorder.none
                     ),
+                    keyboardType: TextInputType.number,
+                    inputFormatters: [LengthLimitingTextInputFormatter(1),
+                      FilteringTextInputFormatter.digitsOnly],
+                    textAlign: TextAlign.center,
                   ),
                 ),
-                Padding(
-                  padding: const EdgeInsets.only(left: 0),
-                  child: Container(
-                    height: 48,
-                    width: 48,
-                    color: Colors.lightBlue[100],
-                    child: TextField(
-                      controller: n[4],
-                      onChanged: (val){
-                        setState(() {
-                          user_otp = user_otp + val;
-                        });
-                        if(val.length == 1)
-                        {
-                          FocusScope.of(context).nextFocus();
-                        }
-                      },
-                      decoration: InputDecoration(
-                          labelStyle: TextStyle(
-                              fontSize: 10,
-                              fontWeight: FontWeight.w600
-                          ),
-                          border: InputBorder.none
-                      ),
-                      keyboardType: TextInputType.number,
-                      inputFormatters: [LengthLimitingTextInputFormatter(1),
-                        FilteringTextInputFormatter.digitsOnly],
-                      textAlign: TextAlign.center,
+                Container(
+                  height: 48,
+                  width: 48,
+                  color: Colors.lightBlue[100],
+                  child: TextField(
+                    controller: n[5],
+                    onChanged: (val){
+                      setState(() {
+                        user_otp = user_otp + val;
+                      });
+                    },
+                    decoration: InputDecoration(
+                        labelStyle: TextStyle(
+                            fontSize: 10,
+                            fontWeight: FontWeight.w600
+                        ),
+                        border: InputBorder.none
                     ),
-                  ),
-                ),
-                Padding(
-                  padding: const EdgeInsets.only(left:0),
-                  child: Container(
-                    height: 48,
-                    width: 48,
-                    color: Colors.lightBlue[100],
-                    child: TextField(
-                      controller: n[5],
-                      onChanged: (val){
-                        setState(() {
-                          user_otp = user_otp + val;
-                        });
-                      },
-                      decoration: InputDecoration(
-                          labelStyle: TextStyle(
-                              fontSize: 10,
-                              fontWeight: FontWeight.w600
-                          ),
-                          border: InputBorder.none
-                      ),
-                      keyboardType: TextInputType.number,
-                      inputFormatters: [LengthLimitingTextInputFormatter(1),
-                        FilteringTextInputFormatter.digitsOnly],
-                      textAlign: TextAlign.center,
-                    ),
+                    keyboardType: TextInputType.number,
+                    inputFormatters: [LengthLimitingTextInputFormatter(1),
+                      FilteringTextInputFormatter.digitsOnly],
+                    textAlign: TextAlign.center,
                   ),
                 ),
               ],
@@ -308,7 +290,7 @@ class _VerifyOtpState extends State<VerifyOtp> {
                 }
                 on FirebaseAuthException catch (e)
                 {
-                  Fluttertoast.showToast(msg: 'Invalid OTP, request again');
+                  Fluttertoast.showToast(msg: 'Invalid OTP');
                   setState(() {
                     for(var i in n)
                       {
